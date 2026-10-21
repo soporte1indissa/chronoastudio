@@ -99,41 +99,67 @@
         <!-- FIN HERO                                   -->
         <!-- ========================================== -->
 
-        <!-- Beneficios -->
-        <section id="beneficios" class="py-20 border-t border-white/5 bg-darkBg">
-            <div class="container mx-auto px-4 max-w-7xl">
+        <!-- Beneficios (Rediseño Bento Grid Tecnológico) -->
+        <section id="beneficios" class="py-24 border-t border-white/5 bg-darkBg relative overflow-hidden">
+            <!-- Efecto de luz de fondo sutil -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-64 bg-brandCyan/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+            <div class="container mx-auto px-4 max-w-7xl relative z-10">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-white">¿Por qué elegir Chronoa Studio?</h2>
+                    <span class="text-brandCyan font-bold tracking-widest uppercase text-xs block mb-3 animate-pulse">Nuestro Valor Añadido</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">¿Por qué elegir <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandCyan to-blue-400">Chronoa Studio?</span></h2>
+                    <p class="text-slate-400 mt-4 max-w-2xl mx-auto font-light text-lg">No solo hacemos páginas; construimos herramientas digitales optimizadas para que tu negocio crezca, sin demoras ni complicaciones.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div class="bg-cardBg rounded-2xl p-8 border border-white/5 hover:border-brandCyan/30 transition-all">
-                        <div class="w-12 h-12 rounded-lg bg-brandCyan/10 flex items-center justify-center mb-6 border border-brandCyan/20">
-                            <i class="fas fa-rocket text-xl text-brandCyan"></i>
+
+                <!-- Grid de 3 Columnas Estilo Bento -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                    
+                    <!-- Tarjeta 1: Entrega Rápida (Destacada) -->
+                    <div class="group bg-[#0c1833] rounded-3xl p-8 md:p-10 border border-white/5 hover:border-brandCyan/40 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden h-full flex flex-col justify-between shadow-lg">
+                        <!-- Decoración de fondo -->
+                        <div class="absolute -right-10 -top-10 text-9xl text-white/[0.02] group-hover:text-brandCyan/[0.05] transition-colors duration-500"><i class="fas fa-rocket"></i></div>
+                        
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brandCyan/20 to-blue-500/20 flex items-center justify-center mb-8 border border-brandCyan/30 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_15px_rgba(0,229,255,0.2)]">
+                                <i class="fas fa-bolt text-2xl text-brandCyan"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-4">Entrega Ultra Rápida</h3>
+                            <p class="text-slate-400 font-light leading-relaxed">
+                                Sabemos que el tiempo es dinero. Entregamos tu sitio web completamente funcional y operando en la nube en un plazo de <strong class="text-white font-medium">3 a 15 días hábiles</strong>, dependiendo del plan elegido, sin excusas ni retrasos.
+                            </p>
                         </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Entrega Rápida</h3>
-                        <p class="text-slate-400 text-sm">Tu página lista y operando entre 3 a 15 días hábiles, sin retrasos.</p>
                     </div>
-                    <div class="bg-cardBg rounded-2xl p-8 border border-white/5 hover:border-brandCyan/30 transition-all">
-                        <div class="w-12 h-12 rounded-lg bg-brandCyan/10 flex items-center justify-center mb-6 border border-brandCyan/20">
-                            <i class="fas fa-globe text-xl text-brandCyan"></i>
+
+                    <!-- Tarjeta 2: Dominio y Hosting -->
+                    <div class="group bg-gradient-to-b from-[#0c1833] to-[#0a152e] rounded-3xl p-8 md:p-10 border border-white/5 hover:border-brandCyan/40 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden h-full flex flex-col justify-between shadow-lg">
+                        <div class="absolute -right-10 -bottom-10 text-9xl text-white/[0.02] group-hover:text-brandCyan/[0.05] transition-colors duration-500"><i class="fas fa-globe"></i></div>
+                        
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brandCyan/20 to-blue-500/20 flex items-center justify-center mb-8 border border-brandCyan/30 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_15px_rgba(0,229,255,0.2)]">
+                                <i class="fas fa-server text-2xl text-brandCyan"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-4">Dominio Profesional Incluido</h3>
+                            <p class="text-slate-400 font-light leading-relaxed">
+                                Olvídate de configuraciones técnicas complejas. Todos nuestros planes incluyen el registro de tu <strong class="text-white font-medium">dominio .com gratis</strong> durante el primer año, además de configuración DNS segura.
+                            </p>
                         </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Dominio Incluido</h3>
-                        <p class="text-slate-400 text-sm">Incluimos tu dominio profesional (.com) gratis durante el primer año.</p>
                     </div>
-                    <div class="bg-cardBg rounded-2xl p-8 border border-white/5 hover:border-brandCyan/30 transition-all">
-                        <div class="w-12 h-12 rounded-lg bg-brandCyan/10 flex items-center justify-center mb-6 border border-brandCyan/20">
-                            <i class="fas fa-mobile-alt text-xl text-brandCyan"></i>
+
+                    <!-- Tarjeta 3: Diseño Móvil -->
+                    <div class="group bg-[#0c1833] rounded-3xl p-8 md:p-10 border border-white/5 hover:border-brandCyan/40 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden h-full flex flex-col justify-between shadow-lg">
+                        <div class="absolute -left-10 -bottom-10 text-9xl text-white/[0.02] group-hover:text-brandCyan/[0.05] transition-colors duration-500"><i class="fas fa-mobile-screen"></i></div>
+                        
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-brandCyan/20 to-blue-500/20 flex items-center justify-center mb-8 border border-brandCyan/30 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_15px_rgba(0,229,255,0.2)]">
+                                <i class="fas fa-mobile-alt text-2xl text-brandCyan"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-4">Diseño 100% Responsivo</h3>
+                            <p class="text-slate-400 font-light leading-relaxed">
+                                Más del 80% del tráfico web actual proviene de teléfonos. Construimos interfaces fluidas y dinámicas que <strong class="text-white font-medium">se adaptan perfectamente</strong> a cualquier celular o tablet.
+                            </p>
                         </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Diseño Móvil</h3>
-                        <p class="text-slate-400 text-sm">100% optimizadas para verse perfectas en teléfonos móviles y tablets.</p>
                     </div>
-                    <div class="bg-cardBg rounded-2xl p-8 border border-white/5 hover:border-brandCyan/30 transition-all">
-                        <div class="w-12 h-12 rounded-lg bg-brandCyan/10 flex items-center justify-center mb-6 border border-brandCyan/20">
-                            <i class="fas fa-file-invoice-dollar text-xl text-brandCyan"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-white mb-2">Facturación FEL</h3>
-                        <p class="text-slate-400 text-sm">Empresa formalizada. Entregamos factura electrónica en todos tus pagos.</p>
-                    </div>
+
                 </div>
             </div>
         </section>
