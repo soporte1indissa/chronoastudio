@@ -1,19 +1,21 @@
 <!-- components/navbar.html -->
-<nav class="bg-[#091326]/95 backdrop-blur-md border-b border-brandCyan/20 sticky top-0 z-50 transition-all">
+<nav class="bg-[#081225]/90 backdrop-blur-md border-b border-white/10 sticky top-0 z-50 transition-all">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center max-w-7xl">
         
-        <!-- Contenedor del Logo y Nombre con cápsula de contraste -->
-        <a href="index.html" class="flex items-center gap-3 p-1.5 rounded-xl bg-white/5 border border-white/10 hover:border-brandCyan/40 transition-all group">
-            <!-- Isotipo (LOGO NUEVO.png) ampliado y con iluminación -->
+        <!-- Logotipo sin cajas ni fondos extraños -->
+        <a href="index.html" class="flex items-center gap-3 group">
+            <!-- LOGO NUEVO.png ajustado a escala y con resplandor cian -->
             <img 
                 src="assets/LOGO NUEVO.png" 
                 alt="Chronoa Studio Logo" 
-                class="h-12 md:h-14 w-auto object-contain drop-shadow-[0_0_12px_rgba(0,229,255,0.45)] group-hover:scale-105 transition-transform"
+                class="h-12 w-auto object-contain drop-shadow-[0_0_12px_rgba(0,229,255,0.4)] transition-transform group-hover:scale-105"
             >
-            <!-- Tipografía (NOMBRE 2.png) con tamaño visible y filtro de nitidez -->
-            <span class="text-xl md:text-2xl font-black tracking-wider text-white">
-    CHRONOA <span class="text-brandCyan font-semibold">STUDIO</span>
-</span>
+            <!-- NOMBRE 2.png en espera del reemplazo a texto -->
+            <img 
+                src="assets/NOMBRE 2.png" 
+                alt="Chronoa Studio" 
+                class="h-7 w-auto object-contain mix-blend-screen opacity-95"
+            >
         </a>
 
         <!-- Menú Desktop -->
