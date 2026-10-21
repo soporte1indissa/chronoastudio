@@ -1,42 +1,35 @@
 <!-- components/navbar.html -->
-<nav class="bg-[#081225]/90 backdrop-blur-md border-b border-white/10 sticky top-0 z-50 transition-all">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center max-w-7xl">
+<nav class="bg-[#040711]/95 backdrop-blur-md border-b border-brandCyan/20 sticky top-0 z-50 transition-all">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center max-w-7xl">
         
-        <!-- Logotipo sin cajas ni fondos extraños -->
-        <a href="index.html" class="flex items-center gap-3 group">
-            <!-- LOGO NUEVO.png ajustado a escala y con resplandor cian -->
+        <!-- LOGO ÚNICO (Sin texto duplicado y a gran escala) -->
+        <a href="index.html" class="flex items-center group py-1">
             <img 
                 src="assets/LOGO NUEVO.png" 
-                alt="Chronoa Studio Logo" 
-                class="h-12 w-auto object-contain drop-shadow-[0_0_12px_rgba(0,229,255,0.4)] transition-transform group-hover:scale-105"
-            >
-            <!-- NOMBRE 2.png en espera del reemplazo a texto -->
-            <img 
-                src="assets/NOMBRE 2.png" 
                 alt="Chronoa Studio" 
-                class="h-7 w-auto object-contain mix-blend-screen opacity-95"
+                class="h-16 md:h-20 w-auto object-contain transition-all duration-300 drop-shadow-[0_0_14px_rgba(0,229,255,0.35)] brightness-125 contrast-115 group-hover:scale-105 group-hover:drop-shadow-[0_0_22px_rgba(0,229,255,0.6)]"
             >
         </a>
 
-        <!-- Menú Desktop -->
+        <!-- MENÚ DESKTOP -->
         <div class="hidden md:flex space-x-8 font-medium text-sm tracking-wide items-center">
             <a href="index.html" id="link-inicio" class="text-slate-300 hover:text-brandCyan transition pb-1">Inicio</a>
             <a href="#beneficios" class="text-slate-400 hover:text-brandCyan transition pb-1">Beneficios</a>
             <a href="#portafolio" class="text-slate-400 hover:text-brandCyan transition pb-1">Portafolio</a>
             <a href="#precios" class="text-slate-400 hover:text-brandCyan transition pb-1">Planes</a>
-            <a href="https://wa.me/TUNUMERO" target="_blank" class="bg-brandCyan text-darkBg px-5 py-2.5 rounded-xl font-bold hover:bg-cyan-400 transition-all glow shadow-lg">
+            <a href="https://wa.me/TUNUMERO" target="_blank" class="bg-brandCyan text-darkBg px-6 py-2.5 rounded-xl font-bold hover:bg-cyan-400 transition-all glow shadow-lg">
                 <i class="fab fa-whatsapp mr-2"></i>Cotizar Ahora
             </a>
         </div>
 
-        <!-- Botón Móvil -->
+        <!-- BOTÓN MÓVIL HAMBURGUESA -->
         <button id="mobile-menu-toggle" class="md:hidden text-white focus:outline-none p-2">
             <i class="fas fa-bars text-2xl"></i>
         </button>
     </div>
 
-    <!-- Menú Desplegable Móvil -->
-    <div id="mobile-menu" class="hidden md:hidden bg-[#070e1d] border-t border-white/10 px-4 py-4 space-y-4 shadow-2xl">
+    <!-- MENÚ DESPLEGABLE MÓVIL -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#040711] border-t border-white/10 px-4 py-4 space-y-4 shadow-2xl">
         <a href="index.html" class="block text-white font-semibold hover:text-brandCyan">Inicio</a>
         <a href="#beneficios" class="block text-slate-400 hover:text-brandCyan">Beneficios</a>
         <a href="#portafolio" class="block text-slate-400 hover:text-brandCyan">Portafolio</a>
