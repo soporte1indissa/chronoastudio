@@ -39,44 +39,65 @@
 
     <main class="relative flex-grow">
         
-        <!-- Hero Section con la Mascota -->
-        <section id="inicio" class="relative py-20 md:py-32 overflow-hidden">
-            <div class="absolute inset-0 tech-grid opacity-50 pointer-events-none"></div>
+        <!-- ========================================== -->
+        <!-- HERO CON FONDO ESTILO TESTING              -->
+        <!-- ========================================== -->
+        <section id="inicio" class="relative w-full min-h-[85vh] lg:min-h-[90vh] bg-cover bg-center flex items-center py-16 px-4 md:px-8 overflow-hidden" style="background-image: url('assets/fondo1.avif');">
             
-            <div class="container mx-auto px-4 max-w-6xl relative z-10">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- CAPA 1: OVERLAY AZUL OSCURO CON MEZCLA (Estilo Testing) -->
+            <div class="absolute inset-0 bg-gradient-to-r from-[#081225]/95 via-[#0F2043]/90 to-[#081225]/85 mix-blend-multiply"></div>
+            
+            <!-- CAPA 2: TINTE PROFUNDO PARA MÁXIMO CONTRASTE -->
+            <div class="absolute inset-0 bg-[#081225]/50"></div>
+
+            <!-- CUADRÍCULA TECNOLÓGICA SUTIL -->
+            <div class="absolute inset-0 tech-grid opacity-30 pointer-events-none"></div>
+
+            <div class="relative z-10 container mx-auto max-w-6xl">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     
-                    <!-- Textos a la Izquierda -->
-                    <div>
-                        <span class="inline-block bg-brandCyan/10 text-brandCyan font-semibold text-xs tracking-widest px-3 py-1 rounded-full mb-6 border border-brandCyan/20 uppercase">
-                            Agencia Web en Guatemala
-                        </span>
-                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-6">
+                    <!-- Columna Izquierda: Información Principal -->
+                    <div class="lg:col-span-7 text-left space-y-6">
+                        <div class="inline-flex items-center gap-2 bg-brandCyan/10 border border-brandCyan/30 px-3.5 py-1.5 rounded-full">
+                            <span class="w-2 h-2 rounded-full bg-brandCyan animate-ping"></span>
+                            <span class="text-brandCyan font-bold text-xs tracking-widest uppercase">Agencia Web en Guatemala</span>
+                        </div>
+
+                        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.08] drop-shadow-md">
                             Desarrollo web rápido,<br>moderno y <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandCyan to-blue-400">efectivo.</span>
                         </h1>
-                        <p class="text-xl md:text-2xl text-slate-400 mb-10 font-light max-w-lg">
-                            Ayudamos a pequeñas y medianas empresas a destacar en internet. Entregamos tu sitio listo para vender en tiempo récord.
+
+                        <p class="text-lg sm:text-xl text-slate-300 font-light max-w-xl leading-relaxed">
+                            Ayudamos a pequeñas y medianas empresas a destacar en internet. Sitios optimizados para celulares y listos para generar ventas desde el primer día.
                         </p>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="https://wa.me/TUNUMERO" target="_blank" class="bg-brandCyan text-darkBg px-8 py-4 rounded-xl text-lg font-bold hover:bg-cyan-400 transition-all glow flex items-center justify-center">
-                                Cotizar mi proyecto <i class="fas fa-arrow-right ml-2"></i>
+
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                            <a href="https://wa.me/TUNUMERO" target="_blank" class="bg-brandCyan text-darkBg px-8 py-4 rounded-xl text-base font-bold hover:bg-cyan-400 transition-all glow flex items-center justify-center shadow-lg">
+                                <span>Cotizar mi proyecto</span>
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
                             </a>
-                            <a href="#precios" class="bg-cardBg border border-slate-700 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:border-brandCyan/50 transition-all text-center">
-                                Ver planes
+                            <a href="#precios" class="bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl text-base font-semibold transition-all text-center">
+                                Ver planes y precios
                             </a>
                         </div>
                     </div>
 
-                    <!-- Mascota a la Derecha -->
-                    <div class="relative flex justify-center order-first md:order-last mb-10 md:mb-0">
-                        <!-- Luz de fondo para la mascota -->
-                        <div class="absolute inset-0 bg-brandCyan/20 blur-[100px] rounded-full"></div>
-                        <img src="assets/mascota.png" alt="Pingüino Chronoa" class="relative z-10 w-full max-w-[320px] md:max-w-md object-contain drop-shadow-[0_0_25px_rgba(0,229,255,0.2)] animate-[pulse_4s_ease-in-out_infinite]">
+                    <!-- Columna Derecha: Mascota con Halo de Luz -->
+                    <div class="lg:col-span-5 flex justify-center relative">
+                        <div class="absolute inset-0 bg-brandCyan/20 blur-[90px] rounded-full pointer-events-none"></div>
+                        <img 
+                            src="assets/mascota.png" 
+                            alt="Mascota Chronoa Studio" 
+                            class="relative z-10 w-full max-w-[280px] sm:max-w-[340px] object-contain drop-shadow-[0_0_35px_rgba(0,229,255,0.25)] animate-[pulse_5s_ease-in-out_infinite]"
+                        >
                     </div>
 
                 </div>
             </div>
         </section>
+        <!-- ========================================== -->
+        <!-- FIN HERO                                   -->
+        <!-- ========================================== -->
 
         <!-- Beneficios -->
         <section id="beneficios" class="py-20 border-t border-white/5 bg-darkBg">
